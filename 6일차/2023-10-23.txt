@@ -1,0 +1,33 @@
+* 풀이한 문제 :
+1. 비밀지도
+https://school.programmers.co.kr/learn/courses/30/lessons/17681
+2. 다트 게임
+https://school.programmers.co.kr/learn/courses/30/lessons/17682
+3. 완주하지 못한 선수
+https://school.programmers.co.kr/learn/courses/30/lessons/42576
+4. K번째수
+https://school.programmers.co.kr/learn/courses/30/lessons/42748
+5. 직사각형 별찍기
+https://school.programmers.co.kr/learn/courses/30/lessons/12969
+6. x만큼 간격이 있는 n개의 숫자
+https://school.programmers.co.kr/learn/courses/30/lessons/12954
+7. 핸드폰 번호 가리기
+https://school.programmers.co.kr/learn/courses/30/lessons/12948
+
+* 참고자료 :
+
+
+* 마지막으로 본 영상 :
+
+
+* 내일 해야할 일 :
+1. 비밀지도
+https://school.programmers.co.kr/learn/courses/30/lessons/17681
+2. 호텔 대실
+https://school.programmers.co.kr/learn/courses/30/lessons/155651
+3. 롤케이크 자르기
+https://school.programmers.co.kr/learn/courses/30/lessons/132265
+4. 직사각형 별찍기
+https://school.programmers.co.kr/learn/courses/30/lessons/12969
+5. x만큼 간격이 있는 n개의 숫자
+https://school.programmers.co.kr/learn/courses/30/lessons/12954
