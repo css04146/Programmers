@@ -1,6 +1,9 @@
 * 내일 해야할 일 :
 1. 크기가 작은 부분 문자열
 https://school.programmers.co.kr/learn/courses/30/lessons/147355
+2. Oralce 공부
+3. 책 사기
+4. 기업 검색
 
 * 참고자료 :
 
