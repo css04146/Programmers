@@ -1,0 +1,14 @@
+* 내일 해야할 일 :
+1. 광물 캐기
+https://school.programmers.co.kr/learn/courses/30/lessons/172927
+2. 삼총사 ( dfs로 풀어보기 )
+https://school.programmers.co.kr/learn/courses/30/lessons/131705
+3. 귤 고르기
+https://school.programmers.co.kr/learn/courses/30/lessons/138476
+4. 행렬의 곱셈
+https://school.programmers.co.kr/learn/courses/30/lessons/12949
+
+* 참고자료 :
+
+
+* 마지막으로 본 영상 :
