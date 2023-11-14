@@ -1,0 +1,18 @@
+* 복습해야 할 것 :
+1. 광물 캐기
+https://school.programmers.co.kr/learn/courses/30/lessons/172927 ( 11 / 17 )
+2. 의상
+https://school.programmers.co.kr/learn/courses/30/lessons/42578 ( 11 / 17 )
+3. 기능개발
+https://school.programmers.co.kr/learn/courses/30/lessons/42586 ( 11 / 17 )
+4. 프로세스
+https://school.programmers.co.kr/learn/courses/30/lessons/42587 ( 11 / 17 )
+5. n진수 - 풀이한 방식이 아닌 다른 방법으로
+https://school.programmers.co.kr/learn/courses/30/lessons/17687 ( 11 / 17 )
+6. 피로도
+https://school.programmers.co.kr/learn/courses/30/lessons/87946 ( 11 / 17 )
+
+* 참고자료 :
+
+
+* 마지막으로 본 영상 :
