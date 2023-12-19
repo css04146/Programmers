@@ -15,7 +15,7 @@ class Solution {
         }
     }
     public void makeNum(String num, String words){
-        if(!num.equals("")) set.add(toi(num));
+        if(!num.equals("")) set.add(toi(num)); // 미리 처리하지 않으면 11과 011 같은 케이스로 인해 오답 처리가 나옴.
         for(int i = 0; i < words.length(); i++){
             makeNum(num + words.charAt(i),
                    words.substring(0, i) + words.substring(i + 1));
