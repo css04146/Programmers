@@ -11,6 +11,7 @@ class Solution {
             }
         });
         String answer = "";
+        if(str[0].equals("0")) return "0";
         for(String s : str) answer += s;
         return answer;
     }
