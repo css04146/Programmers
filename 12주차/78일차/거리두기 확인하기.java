@@ -1,3 +1,56 @@
+// 성공 코드
+import java.util.List;
+import java.util.Queue;
+import java.util.ArrayList;
+import java.util.LinkedList;
+class Solution {
+    public int[] solution(String[][] places) {
+        int[] dx = {1, -1, 0, 0};
+        int[] dy = {0, 0, 1, -1};
+        List<Integer> answer = new ArrayList<>();
+        for(String[] place : places){
+            boolean isKeeped = true; // 거리두기 여부
+            int height = place.length;
+            int width = place[0].length();
+            Queue<int[]> q = new LinkedList<>();
+            for(int i = 0; i < height; i++){
+                if(!isKeeped) break;
+                for(int j = 0; j < width; j++){
+                    if(!isKeeped) break;
+                    if(place[i].charAt(j) == 'P'){
+                        q.add(new int[]{i, j, 0});
+                        boolean[][] visit = new boolean[height][width];
+                        while(!q.isEmpty()){
+                            if(!isKeeped) break;
+                            int[] temp = q.poll();
+                            int x = temp[0]; // i좌표
+                            int y = temp[1]; // j좌표
+                            int dis = temp[2]; // 거리
+                            visit[x][y] = true;
+                            if(dis < 2){
+                                for(int k = 0; k < 4; k++){
+                                    int cx = x + dx[k];
+                                    int cy = y + dy[k];
+                                    if(cx < 0 || cx >= 5
+                                    || cy < 0 || cy >= 5) continue;
+                                    if(!visit[cx][cy]){ // 방문하지 않은 곳이라면
+                                        if(place[cx].charAt(cy) == 'P') isKeeped = false;
+                                        else if(place[cx].charAt(cy) == 'X') continue;
+                                        else q.add(new int[]{cx, cy, dis + 1});
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if(!isKeeped) answer.add(0);
+            else answer.add(1);
+        }
+        return answer.stream().mapToInt(i -> i).toArray();
+    }
+}
+/*********************************************************************************/
 // 실패 코드
 import java.util.List;
 import java.util.Queue;
@@ -61,59 +114,6 @@ class Solution {
                     answer.add(1);
                 }
             }
-        }
-        return answer.stream().mapToInt(i -> i).toArray();
-    }
-}
-/*********************************************************************************/
-// 성공 코드
-import java.util.List;
-import java.util.Queue;
-import java.util.ArrayList;
-import java.util.LinkedList;
-class Solution {
-    public int[] solution(String[][] places) {
-        int[] dx = {1, -1, 0, 0};
-        int[] dy = {0, 0, 1, -1};
-        List<Integer> answer = new ArrayList<>();
-        for(String[] place : places){
-            boolean isKeeped = true; // 거리두기 여부
-            int height = place.length;
-            int width = place[0].length();
-            Queue<int[]> q = new LinkedList<>();
-            for(int i = 0; i < height; i++){
-                if(!isKeeped) break;
-                for(int j = 0; j < width; j++){
-                    if(!isKeeped) break;
-                    if(place[i].charAt(j) == 'P'){
-                        q.add(new int[]{i, j, 0});
-                        boolean[][] visit = new boolean[height][width];
-                        while(!q.isEmpty()){
-                            if(!isKeeped) break;
-                            int[] temp = q.poll();
-                            int x = temp[0]; // i좌표
-                            int y = temp[1]; // j좌표
-                            int dis = temp[2]; // 거리
-                            visit[x][y] = true;
-                            if(dis < 2){
-                                for(int k = 0; k < 4; k++){
-                                    int cx = x + dx[k];
-                                    int cy = y + dy[k];
-                                    if(cx < 0 || cx >= 5
-                                    || cy < 0 || cy >= 5) continue;
-                                    if(!visit[cx][cy]){ // 방문하지 않은 곳이라면
-                                        if(place[cx].charAt(cy) == 'P') isKeeped = false;
-                                        else if(place[cx].charAt(cy) == 'X') continue;
-                                        else q.add(new int[]{cx, cy, dis + 1});
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            if(!isKeeped) answer.add(0);
-            else answer.add(1);
         }
         return answer.stream().mapToInt(i -> i).toArray();
     }
