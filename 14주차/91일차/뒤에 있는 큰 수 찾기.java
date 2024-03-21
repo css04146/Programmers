@@ -1,3 +1,4 @@
+// 복습 필요
 import java.util.Stack;
 class Solution {
     public int[] solution(int[] numbers) {
